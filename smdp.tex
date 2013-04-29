@@ -1,0 +1,354 @@
+\documentclass[12pt,letterpaper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Force pdflatex processing even with "$ latex" (required by arXiv)
+\pdfoutput=1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{xcolor}
+\definecolor{nicered}{rgb}{0.7,0.1,0.1}
+\definecolor{nicegreen}{rgb}{0.1,0.5,0.1}
+\usepackage[colorlinks=true,citecolor= nicegreen,linkcolor= nicered]{hyperref}
+\usepackage{graphicx}
+\usepackage{cancel}
+
+\setlength{\textwidth}{180mm}
+\setlength{\oddsidemargin}{-1cm}
+\setlength{\evensidemargin}{-1cm}
+\setlength{\textheight}{22cm} 
+\setlength{\topmargin}{-1cm}
+\title{Standard Model}
+
+\author{Enrico Nardi}
+\begin{document}
+\maketitle
+
+\section{Introduction}
+%gssi
+\section{Unidades naturales}
+Usaremos $\hbar=c=1$.  
+Nuestro espacio tiempo esta basado en el Grupo $SO(1,3)$, con un factor de conversión entre el factor 1 y e es $c$. 
+
+\section{Repaso del modelo estándar}
+Basado en la simetría $SU(3)\times SU(2)\times U(1)$, con 8 gluones, 3 $W$ y bosón gauge abeliano. Cuando la simetría se rompe, tenemos $W_{\mu}; Z_{\mu}$. Como partículas de spin $1/2$, tenemos
+\begin{align}
+  l=
+  \begin{pmatrix}
+    \nu_L\\ e_{L}
+  \end{pmatrix}\sim& (1,2,-1/2)  & e\sim&(1,1,-1)\\
+  Q=
+  \begin{pmatrix}
+    u_L\\ d_L
+  \end{pmatrix}\sim& (3,2,1/6)  & u\sim&(3,1,2/3)\\
+&&d\sim&(3,1,-1/3)\\
+  H=
+  \begin{pmatrix}
+    \phi^+\\ \phi^0
+  \end{pmatrix}\sim& (1,2,1/2)  & &
+\end{align}
+\begin{itemize}
+\item Los 8 gluones están en la adjunta de $SU(3)$
+\item Los 3 $W$ están en la adjunta de $SU(2)$
+\item $B_{\mu}$ es singlete de todo.
+\end{itemize}
+El Lagrangiano es
+\begin{align*}
+  \mathcal{L}=&-\frac{1}{4}G_{\mu\nu}^{\alpha}-\frac{1}{4}W^{a}_{\mu\nu}W_{a}^{\mu\nu}
+-\frac{1}{4}B_{\mu\nu}B^{\mu\nu}\\
+&-\frac{g_3^2}{64\pi^2}\theta_3\epsilon_{\mu\nu\rho\sigma}G^{\alpha\mu\nu}G^{\alpha\rho\sigma}\\
+&+\text{términos que se pueden eliminar similares al anterior}
+\end{align*}
+donde
+\begin{align*}
+  G_{\mu\nu}^{\alpha}=\partial_{\mu}...
+\end{align*}
+Además
+\begin{align*}
+  \theta_3=\theta_3+2\pi\,.
+\end{align*}
+
+\begin{align*}
+  \mathcal{L}_{gf}=&\bar{l}_i \gamma^{\mu}\mathcal{D}_{\mu}l_i
++\bar{e}_i \gamma^{\mu}\mathcal{D}_{\mu}e_i
++\bar{Q}_i \gamma^{\mu}\mathcal{D}_{\mu}Q_i
++\bar{u}_i \gamma^{\mu}\mathcal{D}_{\mu}u_i
++\bar{d}_i \gamma^{\mu}\mathcal{D}_{\mu}d_i
++\bar{N}_i \gamma^{\mu}\partial_{\mu}N_i
+\end{align*}
+\begin{align*}
+  \mathcal{L}_{H}=\left( \mathcal{D}_{\mu}H \right)^{\dagger}
+\left( \mathcal{D}^{}{\mu}H \right)-V(H^{\dagger}H)
+\end{align*}
+\begin{align*}
+  \mathcal{L}=-\bar{l}_i y^l_{ij}e_j H
+-\bar{Q}_i y^u_{ij}u_j H
+-\bar{Q}_i y^d_{ij}d_j \tilde{H}
+-\bar{N}_i y^N_{ij}N_j \tilde{H}
+\end{align*}
+Los parámetros son
+\begin{itemize}
+\item Gauge sector: $g_1,g_2,g_3,\theta_3$ (4)
+\item Yukawa (ME): 3+3+3+3+1=13
+\item Higgs: $\mu^2;\lambda$ (2)
+\end{itemize}
+
+\section{Problemas del ME}
+
+\begin{align*}
+  [\mathcal{L}]=&M^4
+\end{align*}
+La acción
+\begin{align*}
+  S=&\int d^4x \mathcal{L} & [S]=&0
+\end{align*}
+In $D$-dimensions
+
+\begin{align*}
+  [\mathcal{L^{(D)}}]=&M^D
+\end{align*}
+La acción
+\begin{align*}
+  S=&\int d^Dx \mathcal{L}^{(D)} & [S]=&0
+\end{align*}
+\begin{align*}
+  \left[ \partial_{\mu}\phi \partial^{}{\mu}\phi\right]=&M^D\\
+\left[ \bar{\psi} \gamma^{\mu}\psi\right]=& M^D\\
+\left[ F^{\mu\nu} F_{\mu\nu}\right]...
+\end{align*}
+Entonces
+\begin{align*}
+  lr[\phi^n(\bar{\psi }\psi)^m]=&M^{n+3m}\\
+\end{align*}
+Otras dimensiones
+\begin{itemize}
+\item Gauge couplings $[g_j]=0$
+\item Yukawa couplings: $[y]=0$
+\item Higgs potential parameters: $[\mu]=M^1;\qquad [\lambda]=0$
+\end{itemize}
+A renormalizable theory
+\begin{align*}
+  4\ge [\text{dimension of parameters}]\ge 0\,,
+\end{align*}
+The existence of infinites is required because locality.
+\begin{align*}
+  \int d^4x\mathcal{L}_{\phi}\sim \int d^4 x\phi^{3}
+\end{align*}
+Ultaviolet divergences are expected due to locality. In string theory the amplitudes are finite. 
+
+In SM, it is possible to calculate
+\begin{align*}
+  \mathcal{L}^{(D-5)}_{\mu}\sim&\frac{F_2(0)}{2m_e}\bar{e}\sigma_{\mu\nu}e F^{\mu\nu}\\
+&\bar{\mu}(p')\left[ i\frac{\sigma^{\mu\nu}}{2m} \right]\bar{\mu}(p)
+\end{align*}
+
+
+If the fundamental theory is known, the effective Lagrangian terms can be explained in terms of a more fundamental theory. 
+
+But seen to very low energy with only the four light quarks, the Lagrangian does not includes the muon decay. The decay width for $\tau$ decay
+\begin{align*}
+  \bar{u}_{\nu_{\tau}}(l)\left[ \frac{ig}{\sqrt{2}}\gamma^{\mu}\frac{1}{2}(1-\gamma_5) \right]u_{\tau}(k)\frac{-i}{r^2-M_W^2+i\epsilon}\left[ g_{\mu\nu}+
+\frac{(\xi-1)r_{\mu}-r_{\nu}}{r^2-\xi M_W^2} \right]
+\bar{u}_j(p)\left[ \frac{ig}{\sqrt{2}}\gamma^{\mu}\frac{1}{2}(1-\gamma_5) \right]v_i(q)
+\end{align*}
+The effective width is
+\begin{align*}
+  A_{\tau^{-}\text{decay}}=-i
+\frac{g^2}{8M_W^{2}}V_{ij}
+\left[\bar{u}_{\nu_{\tau}}\gamma^{\mu}(1-\gamma_5)u_{\tau}  \right]
+\left[\bar{u}_j\gamma^{\mu}(1-\gamma_5) v_i  \right]
+\end{align*}
+So that
+\begin{align*}
+  \mathcal{L}^{\text{eff}}=-i\frac{G_F}{\sqrt{2}}V_{ij}
+\left[\bar{u}_{\nu_{\tau}}\gamma^{\mu}(1-\gamma_5)u_{\tau}  \right]
+\left[\bar{u}_j\gamma^{\mu}(1-\gamma_5) v_i  \right]
+\end{align*}
+is a dimension-six Lagrangian. 
+
+In other situation, where we are now with the SM, were the fundamental
+theory is not known. However, we can add to the SM Lagrangian,
+effective terms which the same gauge invariance.
+\begin{align*}
+  \mathcal{L}=\mathcal{L}_{\text{ME}}+\mathcal{L}^{\text{eff}}
+\end{align*}
+where
+\begin{align*}
+  \mathcal{L}^{\text{eff}}=\sum_I C_I \theta^{4+n}(\text{light fields})
+\end{align*}
+where
+\begin{align*}
+  c_I=\frac{\tilde{c}_I}{\Lambda^n}
+\end{align*}
+the $\Lambda$-scale is discouraging large.
+
+In Donogue book, a QED calculation is done for $E\ll m_e$ with path integral
+\begin{align*}
+  Z=\int \left[ D\Phi \right]\left[ D\phi \right]
+e^{i\int d^{x}\left[\mathcal{L}(\phi,\phi)+\mathcal{L}(\phi,\Phi)+\mathcal{L}(\Phi,\Phi)  \right]}
+\end{align*}
+where $\Phi$ are heavy fields, we arrive to
+\begin{align*}
+  \mathcal{L}^{\text{eff}}=\frac{\alpha^{2}}{90m_e^4}\left[ \left( F_{\mu\nu}F^{\mu\nu} \right)^2
++\frac{7}{16}\left( F_{\mu\nu}\widetilde{F}^{\mu\nu} \right)^2 \right]
+\end{align*}
+What is the scale of new physics?, without additional parameters the scale of new physics associated with
+\begin{align*}
+  \frac{1}{\Lambda}(LH)^2\,,
+\end{align*}
+is $\Lambda\sim 10^{14}$, while the others
+\begin{align*}
+  \frac{1}{\Lambda^2}\bar{\psi}\psi\bar{\psi}\psi
+\end{align*}
+the scale is around $100$~TeV
+
+\section{Dimension-0}
+Let
+\begin{align*}
+  \mathcal{L}_0=\frac{1}{2}\partial_{\mu}\varphi\partial^{\mu}\varphi-\frac{1}{2}m^{2}\varphi\varphi-C_{\varphi}
+\end{align*}
+Therefore
+\begin{align*}
+  E_0=C_{\varphi}\int_V d^3x+\frac{1}{2}\int
+  \frac{d^3\mathbf{p}}{E_{\mathbf{p}}(2\pi)^3}
+E_{\mathbf{p}}(2\pi)^3\delta(0)
+\end{align*}
+Normal ordering:
+\begin{align*}
+  \left[ a_{\mathbf{p}},a_{\mathbf{p}'}^{*} \right]=2 E_{\mathbf{p}}
+(2\pi)^3\delta(\mathbf{p}-\mathbf{p}')
+\end{align*}
+Divergences appear at $x\to \infty$ and $\mathbf{p}\to\infty$, and
+\begin{align*}
+  \Omega=\int_V d^3x e^{i(\mathbf{p}=0)}=(2\pi)^3\delta(0)
+\end{align*}
+with
+\begin{align*}
+  \rho=E_0/\Omega
+\end{align*}
+we have
+\begin{align*}
+  \rho=C_{\varphi}+\frac{1}{16\pi}\left\{
+    \underbrace{\Lambda^4+m_{\varphi}\Lambda^2}_{\text{UV}}+
+    \underbrace{\frac{1}{4}m^4\log \frac{m^{2}}{\Lambda^2}
++\frac{1}{4}m^4 \left( \frac{1}{2}\log 4 \right)}_{\text{IR
+      problem $\propto m_{\varphi}^{2}$}}+m^4\mathcal{O}\left( m^2/\Lambda^2 \right) \right\}
+\end{align*}
+Including the fermion contribution
+\begin{align*}
+  E_0^{\psi}=C_{\psi}\int_V d^3x-\sum_{\sigma}\frac{1}{2}\int
+  \frac{d^3\mathbf{p}}{E_{\mathbf{p}}(2\pi)^3}
+E_{\mathbf{p}}(2\pi)^3\delta(0)
+\end{align*}
+and
+\begin{align*}
+  \rho=C_{\psi}-\frac{1}{8\pi}\left\{
+    \underbrace{\Lambda^4+m_{\psi}\Lambda^2}_{\text{UV}}+
+    \underbrace{\frac{1}{4}m_\psi^4\log \frac{m_\psi^{2}}{\Lambda^2}
++\frac{1}{4}m_\psi^4 \left( \frac{1}{2}\log 4 \right)}_{\text{IR
+      problem $\propto m_{\psi}^{2}$}}+m_\psi^4\mathcal{O}\left( m_\psi^2/\Lambda^2 \right) \right\}
+\end{align*}
+
+For the full Lagrangian
+\begin{align*}
+  \rho=C_{\varphi}+C_{\psi}-\frac{1}{16\pi}\left\{
+    [m_{\varphi}-m_{\psi}]\Lambda^2+
+\cdots  \right\}
+\end{align*}
+For the top mass (or a SUSY scale around 100~GeV)
+\begin{align*}
+  \frac{\delta\rho_t}{\rho_{\text{exp}}}\sim 
+  \left( \frac{1.7\times 10^{11}\ \text{eV}}{2.3\times 10^{-3}\
+      \text{eV}} \right)^4
+       \sim 10^{55}
+\end{align*}
+
+\section{Dimension-2}
+
+\textbf{Hierarchy Problem}, related with the hierarchy of the Higgs
+mass.
+\begin{align*}
+  V(|\phi|^2)=&\lambda \left( |\phi|^2-v^2 \right)\nonumber\\
+            =&\lambda|\phi|^4-\mu^2|\phi|^2
+\end{align*}
+The contribution from $W,Z,\gamma$ to the Higgs-mass at one-loop is
+\begin{align*}
+  \frac{1}{16\pi^2}g^2\Lambda^2
+\end{align*}
+the autointeraction contribution is
+\begin{align*}
+  \frac{1}{16\pi^2}\lambda^2\Lambda^2
+\end{align*}
+The top contribution is
+\begin{align*}
+    -\frac{1}{16\pi^2}\lambda_t^2\Lambda^2
+\end{align*}
+
+
+If $\Lambda_{\text{New Physics}}=10\ $TeV and $m_H=200\ \text{GeV}$
+\begin{align}
+  \frac{1}{16\pi^2}g^2\Lambda^2\sim &(700\text{GeV})^2\\
+  \frac{1}{16\pi^2}\lambda^2\Lambda^2\sim & (500\text{GeV})^2\\
+-\frac{1}{16\pi^2}\lambda_t^2\Lambda^2\sim & -(2000\text{GeV})^2\\
+\end{align}
+
+and
+\begin{align*}
+  m_H^2=\left( m_H^0 \right)^2-[-100+10+5]\left( 200\ \text{GeV} \right)^2
+\end{align*}
+
+The precise result in terms of the parameter $\mu$ is
+\begin{align*}
+  \delta \mu^2 =\frac{3}{16\pi^2v^2}
+\left[2m_W^2+m_z+m_H-4 m_t^2  \right]\Lambda^2
+\end{align*}
+the cancellation of the terms inside brackets happen if
+\begin{align*}
+  m_H^2\sim (307\ \text{GeV})^2
+\end{align*}
+which is known as the Veltman's condition. 
+
+With RN neutrinos
+\begin{align*}
+  M_{\nu}=
+  \begin{pmatrix}
+    0 & \lambda v\\    
+    \lambda v &M \\    
+  \end{pmatrix}
+\end{align*}
+with two eigenvalues
+\begin{align*}
+  m_{\nu}\approx \lambda^2\frac{v^2}{M}\nonumber\\
+ M_N\approx M-\lambda^2\frac{v^2}{M}
+\end{align*}
+for $m\sim 0.1\ $eV, and $\lambda\sim 0.1$
+\begin{align*}
+  M\sim 10^{12}\ \text{GeV}
+\end{align*}
+Since RH neutrinos have couplings with the Higgs
+\begin{align*}
+  -\frac{1}{2}\lambda \overline{N}L\Phi
+\end{align*}
+The diagram $\Phi$--$\Phi$ at one loop gives the contribution
+\begin{align*}
+  -i\int
+  \frac{d^p}{(2\pi)^4}\frac{i}{\cancel{p}}\frac{i}{\cancel{p}-m}
+=&i(i)\int
+\frac{\pi^2}{16\pi^4}\frac{1}{2}|p|^2d|p|^2\frac{\cancel{p}_E}{-p_E^2}
+\frac{\cancel{p}_E+M}{-p_E^2-M^2}\nonumber\\
+=&\frac{-i}{16\pi^2}\int_{M_H}^{\Lambda^{2}}(1-M^2/p^2)dp^{2}\nonumber\\
+=&-i \frac{1}{16\pi^2}\left[ \lambda^2-M^2\log \frac{\Lambda^2}{m_H^2} \right]
+\end{align*}
+As $\Lambda>N$, the Higgs mass acquires a 1-loop contribution of order $M$. 
+
+%%%%%%%%%%%%%%%%%
+\bibliographystyle{h-physrev4}%apsrev4-1long
+\bibliography{susy}
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "dmweinberg"
+%%% End: 
