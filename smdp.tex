@@ -538,7 +538,51 @@ In some basis where $y_u$ will be diagonal with one complex entry, and
 hierarchical entries. One part of the puzzle is why the other matrix
 $Y_d$ is a approximately diagonal.
 
+\section{Higher dimension operators}
+\subsection{Weinberg operator}
+\begin{align}
+  \frac{f_{ab}}{\Lambda}\left( \overline{l^c_{ia}}l_{jb} \right)\left( \Phi_k\Phi_l \right)\epsilon_{ik}\epsilon_{jl}
+\end{align}
+\subsubsection{Tree level}
+\begin{enumerate}
+\item $\psi\Phi\rightarrow$ fermion singlet of $SU(2)$
 
+  \begin{align}
+    &\frac{1}{\Lambda}\left( \phi^0\nu-\phi^+e \right)\left( \phi^0\nu-\phi^+e \right) \nonumber\\
+    \sim& \frac{1}{\Lambda}\phi^0\nu \phi^0\nu\sim \frac{v^2}{\Lambda}\nu\nu 
+  \end{align}
+From the tree level diagram with coupling $\lambda$
+\begin{align}
+  m_{\nu}=&\lambda \lambda \frac{v^2}{M_N}& \Lambda\sim \frac{1}{M_N}
+\end{align}
+
+\item $\bar{\psi}\psi\rightarrow$ scalar triplet of $SU(2)$
+  \begin{align}
+    \frac{1}{\Lambda}\left(\underbrace{\phi^0\phi^0}_{-1/2-1/2}\nu\nu
+    -\underbrace{\phi^+\phi^0}_{1/2-1/2}\nu\nu
+    +\underbrace{\phi^+\phi^+}_{1/2+1/2}\nu\nu
+  \right)
+  \end{align}
+From the tree level diagram with couplings $\lambda$ and $\mu$
+\begin{align}
+  m_{\nu}=&\mu \lambda \frac{v^2}{M_\Delta}& \Lambda\sim \frac{\mu}{M_\Delta}
+\end{align}
+
+\item $\psi\Phi\rightarrow$ fermion triplet 
+From the tree level diagram with couplings $\lambda$ and $\mu$
+\begin{align}
+  m_{\nu}=&\mu \lambda \frac{v^2}{M_\Sigma}& \Lambda\sim \frac{1}{M_\Sigma}
+\end{align}
+
+\end{enumerate}
+\subsubsection{1 loop level}
+Sthephano Bertollini et al have studied unification of SM in $SO(10)$,
+which contains the right handed neutrinos in the $16$ (15 fermions and
+one right-handed neutrino), \footnote{$E_6$ contains 27 vector-like
+  fermions} and one intermedaite scale $\Lambda$ compatible with
+type-I seesaw.
+
+$SU(5)$ contains triplet real
 %%%%%%%%%%%%%%%%%
 \bibliographystyle{h-physrev4}%apsrev4-1long
 \bibliography{susy}
@@ -546,5 +590,5 @@ $Y_d$ is a approximately diagonal.
 
 %%% Local Variables: 
 %%% mode: latex
-%%% TeX-master: "dmweinberg"
+%%% TeX-master: "smdp"
 %%% End: 
